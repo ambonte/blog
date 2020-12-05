@@ -12,11 +12,11 @@
 
 {% block content %}
 
-<div class="jumbotron" style="font-family: 'Galada', cursive; font-size: 30px;">
+<div  style="font-family: 'Galada', cursive; font-size: 30px; text-align: center; background-image: url(https://image.freepik.com/free-photo/flowers-books-table-near-frame_23-2147755198.jpg) ;">
         <h1 class="display-4" style="text-align: center; color: darkred; font-size: 100px; font-weight: 900;">Emma's blog</h1>
-        <p class="lead">On this blog, You can view written articles, write your own article, comment and like! </p>
+        <p class="lead" style="text-align: center;">On this blog, You can view written articles, write your own article, comment and like! </p>
         <hr class="my-4">
-        <p>Come share our great posts. Add yours to the mix as well.</p>
+        <p style="text-align: center;">Come share our great posts. Add yours to the mix as well.</p>
         <a class="btn btn-primary btn-sm" href="{{ url_for('main.about')}}" role="button">Learn more about this page</a>
       </div>
 
@@ -45,7 +45,7 @@
       {% endfor %}
     </div>
     <div id="div1" class="fa" style="font-size:52px;"></div>
-    <script>
+    <!-- <script>
       function hand() {
         var a;
         a = document.getElementById("div1");
@@ -62,7 +62,7 @@
       }
       hand();
       setInterval(hand, 2000);
-    </script>
+    </script> -->
     <div class="container" style="font-family: 'Lakki Reddy', cursive;">
       <h2>Blogs Page</h2>
       {% for post in posts %}
